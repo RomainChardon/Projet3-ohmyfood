@@ -1,0 +1,59 @@
+.bg-img {
+    height: 275px;
+}
+
+.plat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 13px;
+    border-radius: 40px 40px 0 0;
+    background: #f6f6f6;
+    transform: translateY(-50px);
+}
+
+.plat-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.choix-categorie {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.choix-title {
+    text-transform: uppercase;
+}
+
+.separation {
+    width: 40px;
+    margin-top: 5px;
+    border-top: 3px solid #99E2D0;
+}
+
+.choix-plats {
+    position: relative;
+    padding: 12px 15px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.plat-title {
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.plat-text {
+    font-size: 15.0431px;
+    line-height: 18px;
+}
+
+.plat-prix {
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+}
