@@ -44,8 +44,9 @@
 .plat-name h1 {
     font-family: 'Shrikhand';
     font-style: italic;
-    font-weight: 800;
+    font-weight: 400;
     font-size: 28px;
+    line-height: 40px;
 }
 
 .plat-prix {
@@ -76,25 +77,87 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
+.selected {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #99e2d0;
+    border-radius: 0 10px 10px 0;
+    transition-duration: 0.5s;
+}
+
+.selected i {
+    display: none;
+    transition-duration: 0.5s;
+}
+
+.choix-plats:hover > .selected {
+    transition-duration: 0.5s;
+    width: 60px;   
+}
+
+.choix-plats:hover > .selected i {
+    transition-duration: 0.5s;
+    display: block;
+    color: #fff;
+}
+
+.choix-plats:hover > .plat-prix {
+    transition-duration: 0.5s;
+    transform: translateX(-60px);
+}
+
+.choix-plats:hover {
+    padding-right: 120px;
+}
+
 .plat-title {
     line-height: 30px;
     font-weight: 600;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
 }
 
 .plat-text {
-    font-size: 15px;
+    font-style: 'Roboto';
     font-weight: 300;
-    line-height: 18px;
+    font-size: 15px;
+    line-height: 17px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+
 }
 
 .plat-prix {
     position: absolute;
     bottom: 12px;
     right: 15px;
+    transition-duration: 0.5s;
 }
 
 .btn-menu {
+    padding: 15px 50px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+}
+
+
+
+
+@media (min-width : 764px) {
+    .plat-container {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 0 10%;
+    }
 }

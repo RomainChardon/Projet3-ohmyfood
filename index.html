@@ -1,12 +1,8 @@
-<!-- TODO - Logo header clicable -->
-<!-- TODO - Importer les fonts -->
-<!-- TODO - Dans fonctionnement : hover pour changer la couleur du logo -->
-<!-- TODO - Dans Page Menu : Taille bouton Commander -->
-<!-- TODO - Dans Page Menu : Coeur clicable et changement de couleur -->
-<!-- TODO - Dans Page Menu : Séléction les plats -->
-<!-- TODO - Dans Page Menu : Rogner la taille des texte -->
-<!-- TODO - Dans Footer : mettre des a href -->
-<!-- TODO - Dans Footer : Enlever line-weight  -->
+<!-- TODO - Afficher et cacher le Loader -->
+<!-- TODO - Footer responsive -->
+<!-- TODO - Dans menu : Afficher progressivement tous les elements des menu ( 1 par 1) -->
+<!-- TODO - Dans le main : hover sur le coeur -->
+
 
 
 <!DOCTYPE html>
@@ -16,13 +12,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3003c17442.js" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>ohmyfood</title>
 </head>
 <body>
+    <!-- <div class="loader" id="loader-2">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div> -->
+
     <header>
-        <img src="images/logo/ohmyfood@2x.svg" class="img-logo" alt="logo de ohmyfood">
+        <a href=""><img src="images/logo/ohmyfood@2x.svg" class="img-logo" alt="logo de ohmyfood"></a>
     </header>
     <main>
         <div class="container-location">
@@ -57,6 +61,7 @@
         </section>
         <section class="restaurants">
             <h1>Restaurants</h1>
+            <div class="restaurant-container">
             <a href="/menu/paletteDuGout.html" class="card">
                 <p class="new-card">Nouveau</p>
                 <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
@@ -99,14 +104,15 @@
                     <i class="fa-regular fa-heart fa-xl"></i>
                 </div>
             </a>
+        </div>
         </section>
     </main>
     <footer>
         <h3>ohmyfood</h3>
-        <div class="foot-icon"><i class="fa-solid fa-utensils fa-sm"></i><p>Proposer un restaurant</p></div>
-        <div class="foot-icon"><i class="fa-solid fa-handshake-angle fa-sm"></i><p>Devenir partenaire</p></div>
-        <p>Mentions légales</p>
-        <p>Contact</p>
+        <a href=""><div class="foot-icon"><i class="fa-solid fa-utensils fa-sm"></i><p>Proposer un restaurant</p></div></a>
+        <a href=""><div class="foot-icon"><i class="fa-solid fa-handshake-angle fa-sm"></i><p>Devenir partenaire</p></div></a>
+        <a href=""><p>Mentions légales</p></a>
+        <a href="mailto:contact@ohmyfood.com"><p>Contact</p></a>
     </footer>
 </body>
 </html>

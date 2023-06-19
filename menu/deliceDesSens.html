@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3003c17442.js" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/menu.css">
     <title>ohmyfood</title>
@@ -13,7 +16,7 @@
 <body>
     <header>
         <a href="/index.html" class="arrow-back"><i class="fa-solid fa-arrow-left fa-xl"></i></a>
-        <img src="/images/logo/ohmyfood@2x.svg" class="img-logo" alt="logo de ohmyfood">
+        <a href="../index.html"><img src="../images/logo/ohmyfood@2x.svg" class="img-logo" alt="logo de ohmyfood"></a>
     </header>
     <main>
         <img src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="bg-img" alt="image du menu palette du gout">
@@ -31,16 +34,19 @@
                     <h3 class="plat-title">Tartare de thon</h3>
                     <p class="plat-text">Assaisonné au yuzu</p>
                     <p class="plat-prix">25€</p>
+                    <span class="selected"><i class="fa-solid fa-circle-check fa-xl"></i></span>
                 </div>
                 <div class="choix-plats">
                     <h3 class="plat-title">Bouchée de homard croustillant </h3>
                     <p class="plat-text">Et sa farandole de petits légumes</p>
                     <p class="plat-prix">35€</p>
+                    <span class="selected"><i class="fa-solid fa-circle-check fa-xl"></i></span>
                 </div>
                 <div class="choix-plats">
                     <h3 class="plat-title">Velouté de cèpes </h3>
                     <p class="plat-text">Aux truffes</p>
                     <p class="plat-prix">20€</p>
+                    <span class="selected"><i class="fa-solid fa-circle-check fa-xl"></i></span>
                 </div>
             </div>
             <div class="choix-categorie">
@@ -52,16 +58,19 @@
                     <h3 class="plat-title">Poulet rôti aux herbes de Provence </h3>
                     <p class="plat-text">Et sa crème de truffe</p>
                     <p class="plat-prix">40€</p>
+                    <span class="selected"><i class="fa-solid fa-circle-check fa-xl"></i></span>
                 </div>
                 <div class="choix-plats">
                     <h3 class="plat-title">Langouste rôtie </h3>
                     <p class="plat-text">Et ses légumes de saison</p>
                     <p class="plat-prix">35€</p>
+                    <span class="selected"><i class="fa-solid fa-circle-check fa-xl"></i></span>
                 </div>
                 <div class="choix-plats">
                     <h3 class="plat-title">Côte de bœuf Angus </h3>
                     <p class="plat-text">Et sa purée de panais</p>
                     <p class="plat-prix">44€</p>
+                    <span class="selected"><i class="fa-solid fa-circle-check fa-xl"></i></span>
                 </div>
             </div>
             <div class="choix-categorie">
@@ -73,16 +82,19 @@
                     <h3 class="plat-title">Farandole de desserts</h3>
                     <p class="plat-text">Du chef</p>
                     <p class="plat-prix">18€</p>
+                    <span class="selected"><i class="fa-solid fa-circle-check fa-xl"></i></span>
                 </div>
                 <div class="choix-plats">
                     <h3 class="plat-title">Crème brulée</h3>
                     <p class="plat-text">Revisitée</p>
                     <p class="plat-prix">22€</p>
+                    <span class="selected"><i class="fa-solid fa-circle-check fa-xl"></i></span>
                 </div>
                 <div class="choix-plats">
                     <h3 class="plat-title">Tiramisu</h3>
                     <p class="plat-text">À la noisette</p>
                     <p class="plat-prix">23€</p>
+                    <span class="selected"><i class="fa-solid fa-circle-check fa-xl"></i></span>
                 </div>
             </div>
             <button class="btn-reserv btn-menu">Commander</button>
@@ -90,10 +102,10 @@
     </main>
     <footer>
         <h3>ohmyfood</h3>
-        <div class="foot-icon"><i class="fa-solid fa-utensils fa-sm"></i><p>Proposer un restaurant</p></div>
-        <div class="foot-icon"><i class="fa-solid fa-handshake-angle fa-sm"></i><p>Devenir partenaire</p></div>
-        <p>Mentions légales</p>
-        <p>Contact</p>
+        <a href=""><div class="foot-icon"><i class="fa-solid fa-utensils fa-sm"></i><p>Proposer un restaurant</p></div></a>
+        <a href=""><div class="foot-icon"><i class="fa-solid fa-handshake-angle fa-sm"></i><p>Devenir partenaire</p></div></a>
+        <a href=""><p>Mentions légales</p></a>
+        <a href="mailto:contact@ohmyfood.com"><p>Contact</p></a>
     </footer>
 </body>
 </html>

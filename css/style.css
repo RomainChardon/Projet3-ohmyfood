@@ -6,6 +6,60 @@
 
 }
 
+
+/* LOADER */
+
+.loader {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#loader-2 span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #3498db;
+  margin: 35px 5px;
+}
+
+#loader-2 span:nth-child(1){
+  animation: bounce 1s ease-in-out infinite;
+}
+
+#loader-2 span:nth-child(2){
+  animation: bounce 1s ease-in-out 0.33s infinite;
+}
+
+#loader-2 span:nth-child(3){
+  animation: bounce 1s ease-in-out 0.66s infinite;
+}
+
+@keyframes bounce{
+  0%, 75%, 100%{
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  25%{
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+/* MAIN */
+
 button {
     font-weight: 500;
     font-size: 16px;
@@ -14,9 +68,10 @@ button {
 }
 
 p {
+    font-style: 'Roboto';
     font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 15px;
+    line-height: 17px;
 }
 
 h1 {
@@ -70,6 +125,7 @@ header {
 }
 
 .btn-reserv {
+    cursor: pointer;
     color: white;
     border: none;
     border-radius: 25px;
@@ -77,6 +133,10 @@ header {
     padding: 15px 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     background: linear-gradient(#FF79DA -11.44%,#9356DC  123.93%);
+}
+
+.btn-reserv:hover {
+    transform: translateX(2px);
 }
 
 
@@ -125,6 +185,10 @@ header {
     color: #7E7E7E;
 }
 
+.step:hover i {
+    color: #9356dc;
+}
+
 .step-text {
     font-size: 16px;
     line-height: 19px;
@@ -140,6 +204,12 @@ header {
     background: #f6f6f6;
     gap: 25px;
     padding: 50px 15px;
+}
+
+.restaurant-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .new-card {
@@ -194,10 +264,10 @@ header {
     padding: 15px;
 }
 
-.icon-liked {
-    color: #9356dc;
-}
 
+.icon-liked  {
+   color: #9356DC;;
+}
 
 /* --------------- Footer --------------- */
 
@@ -206,10 +276,14 @@ footer {
     background: #353535;
     color: #fff;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-footer p {
-    line-height: 30px;
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
 footer h3 {
@@ -228,8 +302,64 @@ footer h3 {
 
 
 
+
+
+
 @media (min-width : 764px) {
-    body {
-        background: rgb(112, 112, 247);
+    .fonctionnement {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .restaurants {
+        padding-left: 10%;
+        padding-right: 10%;
+        
+    }
+
+    .restaurant-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 90px;
+    }
+
+    .card {
+        width: calc((100% / 2) - 45px);
+    }
+
+    .step-container {
+        flex-direction: column;
+    }
+
+    .step {
+        position: relative;
+    }
+
+    .step-number {
+        left: -13px;
+    }
+
+    footer {
+        flex-direction: row;
     }
 }
+
+
+@media (min-width : 1115px) {
+    
+
+    .step-container {
+        flex-direction: row;
+    }
+
+    .step {
+        position: relative;
+        width: calc((100% / 3) - 10%);
+    }
+
+    .step-number {
+        left: -13px;
+    }
+}
+
+
