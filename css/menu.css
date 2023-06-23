@@ -75,6 +75,31 @@
     border-radius: 10px;
     background: #fff;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    animation: showCard 2s;
+    animation-fill-mode: forwards;
+}
+
+.choix-plats:nth-child(2) {
+    animation-delay: 0s;
+}
+.choix-plats:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.choix-plats:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.choix-plats:nth-child(5) {
+    animation-delay: 0.9s;
+}
+
+@keyframes showCard {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .selected {
@@ -150,8 +175,6 @@
     margin-right: auto;
     margin-bottom: 30px;
 }
-
-
 
 
 @media (min-width : 764px) {
