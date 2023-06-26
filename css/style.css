@@ -300,10 +300,31 @@ header {
     padding: 15px;
 }
 
+.coeur-container {
+    position: relative;
+}
+
+.icon-unliked {
+    z-index: 6;
+    color: #000;
+}
 
 .icon-liked  {
-   color: #9356DC;;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    opacity: 0;
 }
+
+.icon-liked-menu {
+    top: 9px;
+}
+
+.icon-liked:hover  {
+    opacity: 1;
+    color: #9356dc;
+}
+
 
 /* --------------- Footer --------------- */
 
