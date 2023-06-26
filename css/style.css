@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: load 3s;
+    animation: load 1.5s;
 }
 
 .loader i {
@@ -168,7 +168,7 @@ header {
 }
 
 .btn-reserv:hover {
-    transform: translateX(2px);
+    background: linear-gradient(#FF79DA -11.44%,#c29bf3  123.93%);
 }
 
 
