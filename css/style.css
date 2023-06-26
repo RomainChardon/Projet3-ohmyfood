@@ -221,6 +221,10 @@ header {
     color: #9356dc;
 }
 
+.step:hover {
+    background: #f2eafb;
+}
+
 .step-text {
     font-size: 16px;
     line-height: 19px;
