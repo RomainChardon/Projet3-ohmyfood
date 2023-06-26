@@ -76,7 +76,7 @@
     background: #fff;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     opacity: 0;
-    animation: showCard 2s;
+    animation: showCard 1s;
     animation-fill-mode: forwards;
 }
 
@@ -117,8 +117,9 @@
 }
 
 .selected i {
-    display: none;
-    transition-duration: 0.5s;
+    opacity: 0;
+    color: #fff;
+    transition: opacity 0.2s 0s;
 }
 
 .choix-plats:hover > .selected {
@@ -127,9 +128,8 @@
 }
 
 .choix-plats:hover > .selected i {
-    transition-duration: 0.5s;
-    display: block;
-    color: #fff;
+    opacity: 1;
+    transition: all 0.3s 0.3s;
 }
 
 .choix-plats:hover > .plat-prix {

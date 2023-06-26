@@ -376,14 +376,25 @@ footer h3 {
     }
 
     footer {
+        flex-direction: row-reverse;
+        padding: 0 50px;
+    }
+
+    footer h3 {
+        padding: 0 50px;
+    }
+
+    .foot-lien {
+        display: flex;
         flex-direction: row;
+        align-items: center;
+        gap: 30px;
     }
 }
 
 
 @media (min-width : 1115px) {
     
-
     .step-container {
         flex-direction: row;
     }
